@@ -1,0 +1,233 @@
+/*
+
+Title: Stylesheet Template
+
+Author: Maurice van Cooten
+
+*/
+
+body {
+  background: #eee;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin:0;
+}
+
+a {
+  color:crimson;
+  text-decoration:none;
+}
+
+a:hover {
+  color:red;
+}
+
+/* Layout
+------------------------------------------*/
+
+header,
+.container,
+footer {
+  margin: 0 auto;
+  width:88%;
+  max-width: 960px;
+}
+
+.wrapper {
+  padding:1em 0;
+  background: #fff;
+}
+
+/* Animation
+------------------------------------------*/
+
+@-webkit-keyframes spin {
+  from {
+  	transform: rotate(0deg);
+  }
+  to {
+  	transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+   from {
+   	transform: rotate(0deg);
+  }
+  to {
+  	transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spin {
+   from {
+   	transform: rotate(0deg);
+  }
+  to {
+  	transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+   from {
+   	transform: rotate(0deg);
+  }
+  to {
+  	transform: rotate(360deg);
+  }
+}
+
+.rotate:hover {
+	-webkit-animation: spin 5s infinite;
+	-moz-animation: spin 5s infinite;
+	-o-animation: spin 5s infinite;
+	animation: spin 5s infinite;
+}
+
+@-webkit-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@-moz-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@-o-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.scale:hover {
+  -webkit-animation: enlarge 2s infinite alternate;
+  -moz-animation: enlarge 2s infinite alternate;
+  -o-animation: enlarge 2s infinite alternate;
+  animation: enlarge 2s infinite alternate;
+}
+
+/*Rainbow*/
+
+@-webkit-keyframes rainbow {
+  0% {
+    background:lime;
+  }
+  25% {
+    background:yellow;
+  }
+  75% {
+    background:orange;
+  }
+  100% {
+    background:red;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background:lime;
+  }
+  25% {
+    background:yellow;
+  }
+  75% {
+    background:orange;
+  }
+  100% {
+    background:red;
+  }
+}
+
+ .background:hover{
+  -webkit-animation: rainbow 5s infinite;
+  -moz-animation: rainbow  5s infinite;
+  -o-animation: rainbow 5s infinite;
+  animation: rainbow 5s infinite;
+  border-radius:50%;
+}
+
+/* Move */
+
+@-webkit-keyframes position {
+  0% {
+    left:0;
+  }
+  25% {
+    left:200px;
+  }
+  75% {
+    left:400px;
+  }
+  100% {
+    left:800px;
+  }
+}
+@keyframes position {
+  0% {
+    left:0;
+  }
+  25% {
+    left:200px;
+  }
+  75% {
+    left:400px;
+  }
+  100% {
+    left:800px;
+  }
+}
+.move:hover {
+  position:fixed;
+  bottom:0;
+  -webkit-animation: position 2s infinite alternate;
+  -moz-animation: position 2s infinite alternate;
+  -o-animation: position 2s infinite alternate;
+  animation: position 2s infinite;
+}
+/*play*/
+@-webkit-keyframes sway {
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  75% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes sway {
+
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  75% {
+    transform: rotate(45deg);
+  }
+}
+.play:hover {
+  -webkit-animation: sway 1s infinite alternate;
+  -moz-animation: sway 1s infinite alternate;
+  -o-animation: sway 1s infinite alternate;
+  animation: sway 1s infinite alternate;
+}

@@ -1,0 +1,39 @@
+/*Gallery*/
+
+.gallery {
+	list-style:none;
+	padding:0;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+.gallery li {
+	margin:2em;
+}
+.gallery img {
+	border: 6px black solid;
+	transition: all 1s ease-in-out;
+}
+.gallery img:hover {
+	border: 6px solid orange;
+}
+.item {
+	position:relative;
+	overflow:hidden;
+}
+.item span {
+	position:absolute;
+	bottom:-50px;
+	left:0;
+	background:white;
+	opacity:0.8;
+	width:100%;
+	padding:0.7em 0 1.2em 0;
+	text-align:center;
+	transition:all 1s ease-in-out;
+}
+.item:hover span{
+	bottom:0;
+}
